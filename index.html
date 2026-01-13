@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DD Construction - Professional construction services specializing in residential and commercial projects. Quality craftsmanship and reliable service for all your building needs.">
+    <meta name="keywords" content="construction, building, renovation, DD Construction, residential construction, commercial construction">
+    <title>DD Construction - Quality Building Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #16213e;
+            font-size: 1.5rem;
+        }
+
+        .company-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffa500;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23333" width="1200" height="600"/><path fill="%23444" d="M0 300L50 280L100 320L150 290L200 310L250 280L300 300L350 270L400 290L450 310L500 280L550 300L600 290L650 310L700 280L750 300L800 290L850 310L900 280L950 300L1000 290L1050 310L1100 280L1150 300L1200 290V600H0Z"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 70px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .cta-button:hover {
+            background: #20ba5a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        .cta-button::before {
+            content: "📱 ";
+            font-size: 1.3rem;
+        }
+
+        section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #16213e;
+        }
+
+        .services {
+            background: #f8f9fa;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 4px solid #ffa500;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .service-card h3 {
+            color: #16213e;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .values-list {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .values-list li {
+            padding: 0.5rem 0;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .values-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #ffa500;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .contact {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5);
+            cursor: pointer;
+            transition: all 0.3s;
+            z-index: 999;
+        }
+
+        .whatsapp-float:hover {
+            background: #20ba5a;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: #0f0f1e;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">DD</div>
+                <span class="company-name">DD Construction</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Building Your Dreams Into Reality</h1>
+            <p>Professional Construction Services You Can Trust</p>
+            <a href="https://wa.me/?text=Hi%20DD%20Construction!%20I'm%20interested%20in%20learning%20more%20about%20your%20construction%20services.%20Can%20we%20discuss%20my%20project?" class="cta-button">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>🏗️ Residential Construction</h3>
+                <p>From custom homes to renovations, we bring your residential vision to life with quality craftsmanship and attention to detail.</p>
+            </div>
+            <div class="service-card">
+                <h3>🏢 Commercial Projects</h3>
+                <p>Comprehensive commercial construction services designed to meet your business needs and exceed industry standards.</p>
+            </div>
+            <div class="service-card">
+                <h3>🔨 Renovations & Remodeling</h3>
+                <p>Transform your existing space with our expert renovation services. We handle everything from concept to completion.</p>
+            </div>
+            <div class="service-card">
+                <h3>📐 Design & Planning</h3>
+                <p>Expert consultation and planning services to ensure your project is executed flawlessly from start to finish.</p>
+            </div>
+            <div class="service-card">
+                <h3>🛠️ General Contracting</h3>
+                <p>Full-service general contracting with project management, scheduling, and quality control throughout the build.</p>
+            </div>
+            <div class="service-card">
+                <h3>✅ Quality Assurance</h3>
+                <p>We stand behind our work with comprehensive warranties and ongoing support for all completed projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About DD Construction</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>DD Construction is a trusted name in the construction industry, committed to delivering exceptional results on every project. With years of experience and a dedicated team of professionals, we've built a reputation for quality, reliability, and customer satisfaction.</p>
+                <p>Our approach combines traditional craftsmanship with modern techniques and materials to create structures that stand the test of time.</p>
+                <ul class="values-list">
+                    <li>Quality workmanship on every project</li>
+                    <li>Transparent communication throughout</li>
+                    <li>On-time and on-budget delivery</li>
+                    <li>Licensed and insured professionals</li>
+                    <li>Customer satisfaction guaranteed</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                    <rect fill="#16213e" width="400" height="400" rx="10"/>
+                    <path fill="#ffa500" d="M200 100L280 180H240V280H160V180H120L200 100Z"/>
+                    <rect fill="#fff" x="180" y="220" width="40" height="40"/>
+                    <circle fill="#ffa500" cx="200" cy="150" r="15"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Let's Build Together</h2>
+        <p>Ready to start your construction project? Contact us today for a free consultation and quote.</p>
+        <div class="contact-info">
+            <p>📧 Follow us on Instagram: @ddconstruction_</p>
+            <a href="https://wa.me/?text=Hi%20DD%20Construction!%20I'm%20interested%20in%20learning%20more%20about%20your%20construction%20services.%20Can%20we%20discuss%20my%20project?" class="cta-button" style="margin-top: 2rem;">Contact Us on WhatsApp</a>
+        </div>
+    </section>
+
+    <a href="https://wa.me/?text=Hi%20DD%20Construction!%20I'm%20interested%20in%20learning%20more%20about%20your%20construction%20services.%20Can%20we%20discuss%20my%20project?" class="whatsapp-float" title="Chat on WhatsApp">💬</a>
+
+    <footer>
+        <p>&copy; 2026 DD Construction. All rights reserved.</p>
+        <p>Building excellence, one project at a time.</p>
+    </footer>
+</body>
+</html>
