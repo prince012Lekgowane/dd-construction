@@ -5,376 +5,654 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Enhanced SEO Meta Tags -->
-    <meta name="description" content="DD Construction - Professional construction services in Centurion, Pretoria specializing in residential and commercial projects. Quality craftsmanship and reliable building services in the AFGRI area.">
-    <meta name="keywords" content="construction, building, renovation, DD Construction, residential construction, commercial construction, Centurion, Pretoria, AFGRI area, N1 development, building contractors">
+    <title><!-- EDITABLE:page-title -->DD Construction - Excellence in Centurion Construction Services<!-- /EDITABLE --></title>
+    <meta name="description" content="<!-- EDITABLE:meta-description -->Professional construction services in Centurion, Gauteng. Specializing in residential and commercial projects along the N1 corridor near AFGRI. Digital layout previews, quality craftsmanship, and 100% client satisfaction guaranteed.<!-- /EDITABLE -->">
+    <meta name="keywords" content="construction Centurion, building contractors Gauteng, N1 construction, AFGRI construction, residential construction Pretoria, commercial construction South Africa, DD Construction, digital layout previews">
     <meta name="author" content="DD Construction">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="DD Construction - Quality Building Services in Centurion, Pretoria">
-    <meta property="og:description" content="Professional construction services specializing in N1 development projects in Centurion, Pretoria near AFGRI.">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ddconstruction.teloss.co.za">
+    <meta property="og:title" content="<!-- EDITABLE:og-title -->DD Construction - Excellence in Centurion Construction Services<!-- /EDITABLE -->">
+    <meta property="og:description" content="<!-- EDITABLE:og-description -->Professional construction services with digital layout previews. Serving Centurion and the N1 corridor with quality craftsmanship.<!-- /EDITABLE -->">
+    <meta property="og:image" content="https://i.ibb.co/KxcRkPDs/Chat-GPT-Image-Jan-29-2026-06-44-58-PM.png">
     
-    <title>DD Construction - Quality Building Services in Centurion, Pretoria</title>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ddconstruction.teloss.co.za">
+    <meta property="twitter:title" content="<!-- EDITABLE:twitter-title -->DD Construction - Centurion's Premier Construction Company<!-- /EDITABLE -->">
+    <meta property="twitter:description" content="<!-- EDITABLE:twitter-description -->Quality construction services with innovative digital previews. Building excellence in Gauteng.<!-- /EDITABLE -->">
+    <meta property="twitter:image" content="https://i.ibb.co/KxcRkPDs/Chat-GPT-Image-Jan-29-2026-06-44-58-PM.png">
     
-    <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://instagram.fdur7-1.fna.fbcdn.net">
-    <link rel="preconnect" href="https://images.unsplash.com">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://i.ibb.co/KxcRkPDs/Chat-GPT-Image-Jan-29-2026-06-44-58-PM.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
-        /* CSS Reset and Base Styles */
+        /* CSS Variables - Apple Design System */
+        :root {
+            --sf-pro: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            
+            /* Colors */
+            --primary-dark: #1d1d1f;
+            --secondary-dark: #2c2c2e;
+            --accent-orange: #ff6b35;
+            --accent-blue: #0071e3;
+            --accent-green: #25D366;
+            --surface-light: #f5f5f7;
+            --surface-elevated: #ffffff;
+            --text-primary: #1d1d1f;
+            --text-secondary: #6e6e73;
+            --border-light: rgba(0, 0, 0, 0.08);
+            
+            /* Shadows - Apple style */
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 12px 48px rgba(0, 0, 0, 0.12);
+            --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.16);
+            
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+            
+            /* Border Radius */
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 18px;
+            --radius-xl: 24px;
+            --radius-full: 9999px;
+            
+            /* Transitions */
+            --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        /* Reset & Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        :root {
-            --primary-dark: #1a1a2e;
-            --secondary-dark: #16213e;
-            --accent-color: #ffa500;
-            --accent-green: #25D366;
-            --light-bg: #f8f9fa;
-            --text-dark: #333;
-            --text-light: #fff;
-            --shadow: 0 4px 6px rgba(0,0,0,0.1);
-            --transition: all 0.3s ease;
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: var(--sf-pro);
+            background: var(--surface-elevated);
+            color: var(--text-primary);
             line-height: 1.6;
-            color: var(--text-dark);
             overflow-x: hidden;
         }
 
-        /* Header & Navigation */
-        header {
-            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
-            color: var(--text-light);
-            padding: 1rem 0;
+        /* Navigation - Apple Style Glassmorphism */
+        .nav-wrapper {
             position: fixed;
-            width: 100%;
             top: 0;
+            left: 0;
+            right: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: var(--space-sm) 0;
         }
 
         nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 var(--space-lg);
+            backdrop-filter: saturate(180%) blur(20px);
+            background: rgba(255, 255, 255, 0.72);
+            border-radius: var(--radius-full);
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-md);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            transition: all 0.3s var(--transition-smooth);
+        }
+
+        nav.scrolled {
+            background: rgba(255, 255, 255, 0.85);
+            box-shadow: var(--shadow-lg);
         }
 
         .logo-container {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: var(--space-sm);
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--primary-dark);
+            text-decoration: none;
         }
 
-        .logo {
-            width: 50px;
-            height: 50px;
-            background: var(--text-light);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: var(--secondary-dark);
-            font-size: 1.5rem;
-        }
-
-        .company-name {
-            font-size: 1.5rem;
-            font-weight: bold;
+        .logo-image {
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-sm);
+            object-fit: cover;
+            box-shadow: var(--shadow-sm);
         }
 
         .nav-links {
             display: flex;
-            gap: 2rem;
+            gap: var(--space-xl);
             list-style: none;
+            align-items: center;
         }
 
         .nav-links a {
-            color: var(--text-light);
+            color: var(--text-primary);
             text-decoration: none;
+            font-size: 0.9rem;
             font-weight: 500;
-            transition: var(--transition);
-            padding: 0.5rem 0;
             position: relative;
+            padding: var(--space-xs) var(--space-sm);
+            transition: all 0.2s var(--transition-smooth);
         }
 
         .nav-links a:hover {
-            color: var(--accent-color);
+            color: var(--accent-orange);
         }
 
         .nav-links a::after {
             content: '';
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 0;
             height: 2px;
-            background: var(--accent-color);
-            transition: var(--transition);
+            background: var(--accent-orange);
+            transition: width 0.3s var(--transition-smooth);
         }
 
         .nav-links a:hover::after {
-            width: 100%;
+            width: 80%;
         }
 
         .mobile-menu-btn {
             display: none;
             background: none;
             border: none;
-            color: var(--text-light);
             font-size: 1.5rem;
             cursor: pointer;
+            color: var(--primary-dark);
         }
 
-        /* Hero Section */
+        /* Hero Section - 3D Parallax Effect */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            padding: var(--space-3xl) var(--space-lg);
+            margin-top: 80px;
+        }
+
+        .hero-background {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .hero-bg-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.15;
+            filter: blur(2px);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, 
+                rgba(255, 107, 53, 0.1) 0%, 
+                rgba(0, 113, 227, 0.1) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
             text-align: center;
-            color: var(--text-light);
-            margin-top: 70px;
-            padding: 0 1rem;
+            animation: fadeInUp 1s var(--transition-smooth);
         }
 
-        .hero-content h1 {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        .hero-content p {
-            font-size: clamp(1rem, 2vw, 1.5rem);
-            margin-bottom: 2rem;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-            max-width: 800px;
-        }
-
-        /* CTA Button */
-        .cta-button {
+        .hero-badge {
             display: inline-block;
-            background: var(--accent-green);
-            color: var(--text-light);
-            padding: 1rem 2.5rem;
+            padding: var(--space-xs) var(--space-md);
+            background: var(--surface-elevated);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--accent-orange);
+            margin-bottom: var(--space-md);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-light);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: var(--space-md);
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent-orange) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: var(--text-secondary);
+            margin-bottom: var(--space-xl);
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        /* CTA Buttons - Apple Style */
+        .cta-group {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            padding: 1rem 2rem;
+            background: var(--primary-dark);
+            color: var(--surface-elevated);
             text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            transition: var(--transition);
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: all 0.3s var(--transition-smooth);
+            box-shadow: var(--shadow-md);
             border: none;
             cursor: pointer;
         }
 
-        .cta-button:hover {
-            background: #20ba5a;
+        .btn-primary:hover {
+            background: var(--secondary-dark);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+            box-shadow: var(--shadow-lg);
         }
 
-        /* Sections */
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            padding: 1rem 2rem;
+            background: var(--surface-elevated);
+            color: var(--primary-dark);
+            text-decoration: none;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: all 0.3s var(--transition-smooth);
+            box-shadow: var(--shadow-sm);
+            border: 2px solid var(--border-light);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-whatsapp {
+            background: var(--accent-green);
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background: #20ba5a;
+        }
+
+        /* Section Base Styles */
         section {
-            padding: 5rem 2rem;
-            max-width: 1200px;
+            padding: var(--space-3xl) var(--space-lg);
+            max-width: 1400px;
             margin: 0 auto;
         }
 
-        h2 {
-            font-size: clamp(1.8rem, 4vw, 2.5rem);
-            margin-bottom: 2rem;
+        .section-header {
             text-align: center;
-            color: var(--secondary-dark);
-            position: relative;
+            margin-bottom: var(--space-3xl);
+            animation: fadeIn 0.8s var(--transition-smooth);
         }
 
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background: var(--accent-color);
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
-        /* Services Section */
+        .section-badge {
+            display: inline-block;
+            padding: var(--space-xs) var(--space-md);
+            background: var(--surface-light);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--accent-orange);
+            margin-bottom: var(--space-sm);
+            border: 1px solid var(--border-light);
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--space-md);
+            color: var(--primary-dark);
+        }
+
+        .section-description {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Services Section - 3D Cards */
         .services {
-            background: var(--light-bg);
+            background: var(--surface-light);
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-xl);
         }
 
         .service-card {
-            background: var(--text-light);
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            border-left: 4px solid var(--accent-color);
+            background: var(--surface-elevated);
+            padding: var(--space-xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-light);
+            transition: all 0.4s var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-orange), var(--accent-blue));
+            transform: scaleX(0);
+            transition: transform 0.4s var(--transition-smooth);
         }
 
         .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-blue));
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: var(--space-md);
+            box-shadow: var(--shadow-md);
         }
 
         .service-card h3 {
-            color: var(--secondary-dark);
-            margin-bottom: 1rem;
             font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+            color: var(--primary-dark);
         }
 
-        /* About Section */
-        .about {
-            background: var(--text-light);
+        .service-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: 1.05rem;
         }
 
+        /* About Section - Split Layout */
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 3rem;
+            gap: var(--space-3xl);
             align-items: center;
-            margin-top: 2rem;
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: var(--space-md);
+            color: var(--primary-dark);
         }
 
         .about-text p {
-            margin-bottom: 1rem;
             font-size: 1.1rem;
+            color: var(--text-secondary);
             line-height: 1.8;
+            margin-bottom: var(--space-md);
         }
 
         .values-list {
             list-style: none;
-            margin-top: 1.5rem;
+            margin-top: var(--space-lg);
         }
 
         .values-list li {
-            padding: 0.5rem 0;
-            padding-left: 2rem;
+            padding: var(--space-sm);
+            margin-bottom: var(--space-sm);
+            padding-left: 2.5rem;
             position: relative;
+            font-size: 1.05rem;
+            color: var(--text-primary);
         }
 
         .values-list li::before {
             content: "✓";
             position: absolute;
             left: 0;
-            color: var(--accent-color);
+            color: var(--accent-orange);
             font-weight: bold;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
+            background: var(--surface-light);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius-sm);
+        }
+
+        .about-image-container {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
         }
 
         .about-image {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-        }
-
-        .about-image img {
             width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.5s ease;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s var(--transition-smooth);
         }
 
-        .about-image:hover img {
+        .about-image-container:hover .about-image {
             transform: scale(1.05);
         }
 
-        /* Projects Gallery */
-        .projects {
-            background: var(--light-bg);
+        /* Gallery Section - Dynamic CMS Gallery */
+        .gallery {
+            background: var(--surface-light);
+            display: none; /* Hidden by default, shown when gallery_enabled is true */
         }
 
-        .projects-grid {
+        .gallery.enabled {
+            display: block;
+        }
+
+        .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--space-lg);
         }
 
-        .project-card {
-            background: var(--text-light);
-            border-radius: 10px;
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-lg);
             overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            box-shadow: var(--shadow-md);
+            aspect-ratio: 4/3;
+            background: var(--surface-elevated);
+            cursor: pointer;
+            transition: all 0.4s var(--transition-smooth);
         }
 
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        .gallery-item:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--shadow-xl);
         }
 
-        .project-img {
+        .gallery-image {
             width: 100%;
-            height: 250px;
+            height: 100%;
             object-fit: cover;
+            transition: transform 0.6s var(--transition-smooth);
         }
 
-        .project-info {
-            padding: 1.5rem;
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.1);
         }
 
-        .project-info h3 {
-            color: var(--secondary-dark);
-            margin-bottom: 0.5rem;
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: var(--space-md);
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.4s var(--transition-smooth);
         }
 
-        /* Contact Section */
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+
+        /* Contact Section - Premium Design */
         .contact {
             background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
-            color: var(--text-light);
-            text-align: center;
+            color: var(--surface-elevated);
+            border-radius: var(--radius-xl);
+            margin: var(--space-2xl);
+            padding: var(--space-3xl);
         }
 
-        .contact h2 {
-            color: var(--text-light);
+        .contact .section-title,
+        .contact .section-description {
+            color: var(--surface-elevated);
         }
 
-        .contact h2::after {
-            background: var(--accent-color);
+        .contact .section-badge {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--accent-orange);
+            border-color: rgba(255, 255, 255, 0.2);
         }
 
-        .contact-info {
-            margin-top: 2rem;
-            font-size: 1.2rem;
-        }
-
-        .contact-details {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            margin: 2rem 0;
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
         }
 
         .contact-item {
             display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            align-items: flex-start;
+            gap: var(--space-md);
+            padding: var(--space-lg);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s var(--transition-smooth);
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-4px);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: var(--space-xs);
+            opacity: 0.7;
+        }
+
+        .contact-details p,
+        .contact-details a {
+            color: var(--surface-elevated);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .contact-details a:hover {
+            color: var(--accent-orange);
         }
 
         /* WhatsApp Float Button */
@@ -382,97 +660,102 @@
             position: fixed;
             bottom: 30px;
             right: 30px;
+            width: 64px;
+            height: 64px;
             background: var(--accent-green);
-            color: var(--text-light);
-            width: 60px;
-            height: 60px;
+            color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 2rem;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5);
+            box-shadow: var(--shadow-xl);
             cursor: pointer;
-            transition: var(--transition);
             z-index: 999;
             text-decoration: none;
+            transition: all 0.3s var(--transition-bounce);
         }
 
         .whatsapp-float:hover {
-            background: #20ba5a;
-            transform: scale(1.1);
+            transform: scale(1.15);
+            box-shadow: 0 16px 48px rgba(37, 211, 102, 0.4);
         }
 
         /* Footer */
         footer {
-            background: #0f0f1e;
-            color: var(--text-light);
-            padding: 3rem 2rem 2rem;
+            background: var(--primary-dark);
+            color: var(--surface-elevated);
+            padding: var(--space-3xl) var(--space-lg) var(--space-lg);
         }
 
         .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
             max-width: 1200px;
             margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-2xl);
+            margin-bottom: var(--space-xl);
+        }
+
+        .footer-section h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: var(--space-md);
+            color: var(--accent-orange);
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            line-height: 1.8;
+            transition: color 0.2s;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-orange);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: var(--space-sm);
         }
 
         .footer-logo {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .footer-links h3,
-        .footer-contact h3 {
-            margin-bottom: 1rem;
-            color: var(--accent-color);
-        }
-
-        .footer-links ul {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-links a {
-            color: var(--text-light);
-            text-decoration: none;
-            transition: var(--transition);
-        }
-
-        .footer-links a:hover {
-            color: var(--accent-color);
-            padding-left: 5px;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-md);
         }
 
         .copyright {
             text-align: center;
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: var(--space-xl);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-links {
                 position: fixed;
-                top: 70px;
+                top: 80px;
                 left: 0;
                 right: 0;
-                background: var(--secondary-dark);
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: saturate(180%) blur(20px);
                 flex-direction: column;
-                padding: 2rem;
-                text-align: center;
+                padding: var(--space-xl);
+                gap: var(--space-md);
+                border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+                box-shadow: var(--shadow-lg);
                 transform: translateY(-100%);
                 opacity: 0;
                 visibility: hidden;
-                transition: var(--transition);
-                box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+                transition: all 0.4s var(--transition-smooth);
             }
 
             .nav-links.active {
@@ -489,219 +772,264 @@
                 grid-template-columns: 1fr;
             }
 
-            .contact-details {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
+            .contact-grid {
+                grid-template-columns: 1fr;
             }
 
-            section {
-                padding: 3rem 1rem;
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .cta-group {
+                flex-direction: column;
+            }
+
+            .contact {
+                margin: var(--space-lg);
+                padding: var(--space-xl);
             }
         }
 
         /* Loading Animation */
-        .loading {
+        .fade-in {
             opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s, transform 0.5s;
+            transform: translateY(30px);
+            transition: opacity 0.8s var(--transition-smooth), 
+                        transform 0.8s var(--transition-smooth);
         }
 
-        .loading.visible {
+        .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
-        }
-
-        /* Image Fallback */
-        .img-fallback {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #e0e0e0;
-            color: #666;
-            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo-container">
-                <div class="logo">DD</div>
-                <span class="company-name">DD Construction</span>
-            </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+    <!-- Navigation -->
+    <div class="nav-wrapper">
+        <nav id="mainNav">
+            <a href="#home" class="logo-container">
+                <img src="https://i.ibb.co/KxcRkPDs/Chat-GPT-Image-Jan-29-2026-06-44-58-PM.png" alt="DD Construction Logo" class="logo-image">
+                <span><!-- EDITABLE:business-name -->DD Construction<!-- /EDITABLE --></span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">☰</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Projects</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content loading">
-            <h1>Building Excellence in Centurion, Pretoria</h1>
-            <p>Professional construction services specializing in N1 development projects near AFGRI. Quality craftsmanship you can trust for residential and commercial projects.</p>
-            <a href="#contact" class="cta-button">Get a Free Quote</a>
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1590479773265-7464e5d48118?w=1920&q=80" 
+                 alt="Modern construction site in Centurion" 
+                 class="hero-bg-image">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge"><!-- EDITABLE:hero-badge -->Serving Gauteng Since 2020<!-- /EDITABLE --></div>
+            <h1><!-- EDITABLE:hero-title -->Crafting Excellence in Construction<!-- /EDITABLE --></h1>
+            <p><!-- EDITABLE:hero-subtitle -->Delivering professional services for residential and commercial projects, with a focus on the N1 corridor near AFGRI. Rely on our quality craftsmanship for builds you can trust.<!-- /EDITABLE --></p>
+            <div class="cta-group">
+                <a href="#contact" class="btn-primary">Request a Free Quote</a>
+                <a href="https://wa.me/27123456789?text=Hi%20DD%20Construction!%20I'm%20interested%20in%20your%20services." 
+                   class="btn-whatsapp" 
+                   target="_blank">
+                    💬 WhatsApp Us
+                </a>
+            </div>
         </div>
     </section>
 
+    <!-- Services Section -->
     <section id="services" class="services">
-        <h2>Our Construction Services</h2>
+        <div class="section-header">
+            <div class="section-badge"><!-- EDITABLE:services-badge -->What We Offer<!-- /EDITABLE --></div>
+            <h2 class="section-title"><!-- EDITABLE:services-title -->Our Services<!-- /EDITABLE --></h2>
+            <p class="section-description"><!-- EDITABLE:services-description -->Comprehensive construction solutions tailored to your needs<!-- /EDITABLE --></p>
+        </div>
         <div class="services-grid">
-            <div class="service-card loading">
-                <h3>🏗️ Residential Construction</h3>
-                <p>From custom homes to renovations in Centurion and Pretoria, we bring your residential vision to life with quality craftsmanship and attention to detail.</p>
+            <div class="service-card fade-in">
+                <div class="service-icon">🏠</div>
+                <h3><!-- EDITABLE:service1-title -->Residential Construction<!-- /EDITABLE --></h3>
+                <p><!-- EDITABLE:service1-description -->From custom homes to full renovations, we bring your vision to life with exceptional craftsmanship and careful attention to every detail.<!-- /EDITABLE --></p>
             </div>
-            <div class="service-card loading">
-                <h3>🏢 Commercial Projects</h3>
-                <p>Comprehensive commercial construction services for N1 development area and AFGRI vicinity, designed to meet your business needs and exceed industry standards.</p>
+            <div class="service-card fade-in">
+                <div class="service-icon">🏢</div>
+                <h3><!-- EDITABLE:service2-title -->Commercial Projects<!-- /EDITABLE --></h3>
+                <p><!-- EDITABLE:service2-description -->Comprehensive solutions for commercial developments, including modern builds along key corridors such as the N1.<!-- /EDITABLE --></p>
             </div>
-            <div class="service-card loading">
-                <h3>🔨 Renovations & Remodeling</h3>
-                <p>Transform your existing space with our expert renovation services. We handle everything from concept to completion in the Centurion area.</p>
+            <div class="service-card fade-in">
+                <div class="service-icon">🔨</div>
+                <h3><!-- EDITABLE:service3-title -->Renovations & Remodelling<!-- /EDITABLE --></h3>
+                <p><!-- EDITABLE:service3-description -->Breathe new life into existing spaces. We manage every phase from concept through to flawless completion.<!-- /EDITABLE --></p>
             </div>
-            <div class="service-card loading">
-                <h3>📐 Design & Planning</h3>
-                <p>Expert consultation and planning services to ensure your project is executed flawlessly from start to finish with proper permits and compliance.</p>
+            <div class="service-card fade-in">
+                <div class="service-icon">📐</div>
+                <h3><!-- EDITABLE:service4-title -->Design & Planning<!-- /EDITABLE --></h3>
+                <p><!-- EDITABLE:service4-description -->Expert consultation, precise planning, and digital layout previews. Get accurate digital previews of your project's floor plans, room arrangements, and overall proportions before execution begins.<!-- /EDITABLE --></p>
             </div>
-            <div class="service-card loading">
-                <h3>🛠️ General Contracting</h3>
-                <p>Full-service general contracting with project management, scheduling, and quality control throughout the build process in Pretoria.</p>
+            <div class="service-card fade-in">
+                <div class="service-icon">🛠️</div>
+                <h3><!-- EDITABLE:service5-title -->General Contracting<!-- /EDITABLE --></h3>
+                <p><!-- EDITABLE:service5-description -->Complete project oversight including scheduling, budgeting, quality control, and coordination ensuring smooth delivery from groundbreaking to handover.<!-- /EDITABLE --></p>
             </div>
-            <div class="service-card loading">
-                <h3>✅ Quality Assurance</h3>
-                <p>We stand behind our work with comprehensive warranties and ongoing support for all completed projects in the Centurion region.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>Our Recent Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card loading">
-                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" 
-                     alt="Modern residential building project" 
-                     class="project-img"
-                     onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\"project-img img-fallback\">Residential Project</div><div class=\"project-info\"><h3>Residential Development</h3><p>Modern residential construction in Centurion area</p></div>';">
-                <div class="project-info">
-                    <h3>Centurion Residential Development</h3>
-                    <p>Modern residential complex near N1 highway with premium finishes and sustainable design.</p>
-                </div>
-            </div>
-            <div class="project-card loading">
-                <img src="https://instagram.fdur7-1.fna.fbcdn.net/v/t51.2885-19/398892202_868191424839315_3647972676606377695_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fdur7-1.fna.fbcdn.net&_nc_cat=103&_nc_oc=Q6cZ2QEIdYTQDdiEEGM-ZnaS9C5F6u_SdxR9p83rFyGpJUccqjhqS_W7wqApxNxbqu9lNR0&_nc_ohc=zgHy-M-0qCAQ7kNvwH86m0L&_nc_gid=EpFOMhc6u80zOi5XCfIJSw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfohzudLP3fEw2Fuisjw6p4fQvqkzwu5NgH0zrYJyumukw&oe=696B5720&_nc_sid=8b3546" 
-                     alt="DD Construction project site" 
-                     class="project-img"
-                     onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\"project-img img-fallback\">Construction Site</div><div class=\"project-info\"><h3>N1 Development Project</h3><p>Construction project in Centurion near AFGRI</p></div>';">
-                <div class="project-info">
-                    <h3>N1 Commercial Development</h3>
-                    <p>Ongoing commercial construction project in the Centurion area near AFGRI facilities.</p>
-                </div>
-            </div>
-            <div class="project-card loading">
-                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" 
-                     alt="Construction site with heavy equipment" 
-                     class="project-img"
-                     onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\"project-img img-fallback\">Construction Site</div><div class=\"project-info\"><h3>Site Development</h3><p>Groundwork and foundation preparation</p></div>';">
-                <div class="project-info">
-                    <h3>Pretoria Industrial Complex</h3>
-                    <p>Large-scale industrial construction with focus on structural integrity and functional design.</p>
-                </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">✅</div>
+                <h3><!-- EDITABLE:service6-title -->Quality Assurance<!-- /EDITABLE --></h3>
+                <p><!-- EDITABLE:service6-description -->Every project is backed by ongoing support, and our commitment to lasting quality.<!-- /EDITABLE --></p>
             </div>
         </div>
     </section>
 
+    <!-- Gallery Section - Dynamic CMS Gallery -->
+    <section id="gallery" class="gallery fade-in">
+        <div class="section-header">
+            <div class="section-badge"><!-- EDITABLE:gallery-badge -->Our Work<!-- /EDITABLE --></div>
+            <h2 class="section-title"><!-- EDITABLE:gallery-title -->Recent Projects<!-- /EDITABLE --></h2>
+            <p class="section-description"><!-- EDITABLE:gallery-description -->Showcasing our commitment to excellence in construction<!-- /EDITABLE --></p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Gallery images will be dynamically inserted here by CMS -->
+            <!-- Example structure:
+            <div class="gallery-item">
+                <img src="image-url" alt="Project" class="gallery-image">
+                <div class="gallery-caption">
+                    <p>Project caption</p>
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!-- About Section -->
     <section id="about" class="about">
-        <h2>About DD Construction</h2>
+        <div class="section-header">
+            <div class="section-badge"><!-- EDITABLE:about-badge -->Who We Are<!-- /EDITABLE --></div>
+            <h2 class="section-title"><!-- EDITABLE:about-title -->About DD Construction<!-- /EDITABLE --></h2>
+        </div>
         <div class="about-content">
-            <div class="about-text loading">
-                <p>DD Construction is a trusted name in the Centurion and Pretoria construction industry, committed to delivering exceptional results on every project. With years of experience in the N1 development corridor and AFGRI area, we've built a reputation for quality, reliability, and customer satisfaction.</p>
-                <p>Our approach combines traditional craftsmanship with modern techniques and materials to create structures that stand the test of time. We specialize in both residential and commercial projects, with particular expertise in the growing Centurion region.</p>
+            <div class="about-text fade-in">
+                <h3><!-- EDITABLE:about-heading -->Building Trust, Delivering Excellence<!-- /EDITABLE --></h3>
+                <p><!-- EDITABLE:about-p1 -->DD Construction is a trusted name delivering outstanding results on every project. With deep experience in high-growth areas like the N1 surrounds, we've built a strong reputation for reliability, transparency, and complete client satisfaction.<!-- /EDITABLE --></p>
+                <p><!-- EDITABLE:about-p2 -->We combine proven traditional methods with the latest techniques, premium materials, and modern digital tools such as digital layout previews to ensure every aspect of the design feels right before construction begins. Whether residential or commercial, we specialise in turning ambitious ideas into reality with precision and early clarity for our clients.<!-- /EDITABLE --></p>
                 <ul class="values-list">
-                    <li>Quality workmanship on every project</li>
-                    <li>Transparent communication throughout</li>
-                    <li>On-time and on-budget delivery</li>
-                    <li>Licensed and insured professionals</li>
-                    <li>Customer satisfaction guaranteed</li>
-                    <li>Local expertise in Centurion/Pretoria area</li>
+                    <li><!-- EDITABLE:value1 -->Outstanding workmanship on every project<!-- /EDITABLE --></li>
+                    <li><!-- EDITABLE:value2 -->Clear, consistent communication throughout<!-- /EDITABLE --></li>
+                    <li><!-- EDITABLE:value3 -->On-time and on-budget delivery<!-- /EDITABLE --></li>
+                    <li><!-- EDITABLE:value4 -->Fully licensed and insured professionals<!-- /EDITABLE --></li>
+                    <li><!-- EDITABLE:value5 -->100% client satisfaction guaranteed<!-- /EDITABLE --></li>
+                    <li><!-- EDITABLE:value6 -->Local expertise + digital layout previews to help you visualise the full spatial design<!-- /EDITABLE --></li>
                 </ul>
             </div>
-            <div class="about-image loading">
-                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" 
-                     alt="DD Construction team at work"
-                     onerror="this.onerror=null; this.parentElement.innerHTML='<div style=\"width:100%;height:300px;display:flex;align-items:center;justify-content:center;background:#e0e0e0;color:#666;font-weight:bold;border-radius:10px;\">DD Construction Team</div>';">
+            <div class="about-image-container fade-in">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80" 
+                     alt="DD Construction team on site" 
+                     class="about-image">
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Let's Build Together</h2>
-        <p>Ready to start your construction project in Centurion or Pretoria? Contact us today for a free consultation and quote.</p>
-        
-        <div class="contact-details">
-            <div class="contact-item">
-                <span>📍</span>
-                <span>Serving Centurion, Pretoria & N1 Development Area</span>
+        <div class="section-header">
+            <div class="section-badge"><!-- EDITABLE:contact-badge -->Get In Touch<!-- /EDITABLE --></div>
+            <h2 class="section-title"><!-- EDITABLE:contact-title -->Let's Build Together<!-- /EDITABLE --></h2>
+            <p class="section-description"><!-- EDITABLE:contact-description -->Ready to start your next project? Contact us today for a consultation, personalised quote, and services<!-- /EDITABLE --></p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-item fade-in">
+                <div class="contact-icon">📍</div>
+                <div class="contact-details">
+                    <h4>Location</h4>
+                    <p><!-- EDITABLE:address -->Gauteng, South Africa<br>N1 Corridor, Centurion<!-- /EDITABLE --></p>
+                </div>
             </div>
-            <div class="contact-item">
-                <span>📱</span>
-                <span>Follow us: @ddconstruction_</span>
+            <div class="contact-item fade-in">
+                <div class="contact-icon">📧</div>
+                <div class="contact-details">
+                    <h4>Email</h4>
+                    <p><a href="mailto:<!-- EDITABLE:email -->Septemberdartagnan@gmail.com<!-- /EDITABLE -->"><!-- EDITABLE:email-display -->Septemberdartagnan@gmail.com<!-- /EDITABLE --></a></p>
+                </div>
+            </div>
+            <div class="contact-item fade-in">
+                <div class="contact-icon">📱</div>
+                <div class="contact-details">
+                    <h4>Social Media</h4>
+                    <p><a href="https://instagram.com/<!-- EDITABLE:instagram-handle -->ddconstruction_<!-- /EDITABLE -->" target="_blank">@<!-- EDITABLE:instagram-display -->ddconstruction_<!-- /EDITABLE --></a></p>
+                </div>
+            </div>
+            <div class="contact-item fade-in">
+                <div class="contact-icon">🕒</div>
+                <div class="contact-details">
+                    <h4>Operating Hours</h4>
+                    <p><!-- EDITABLE:hours -->Mon-Fri: 8:00 AM - 5:00 PM<br>Sat: 9:00 AM - 1:00 PM<!-- /EDITABLE --></p>
+                </div>
             </div>
         </div>
-        
-        <div class="contact-info">
-            <a href="https://wa.me/?text=Hi%20DD%20Construction!%20I'm%20interested%20in%20learning%20more%20about%20your%20construction%20services%20in%20Centurion.%20Can%20we%20discuss%20my%20project?" 
-               class="cta-button" 
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="https://wa.me/27123456789?text=Hi%20DD%20Construction!%20I'd%20like%20to%20discuss%20a%20project." 
+               class="btn-primary btn-whatsapp" 
                target="_blank">
-                Contact Us on WhatsApp
+                💬 Connect via WhatsApp
             </a>
         </div>
     </section>
 
-    <a href="https://wa.me/?text=Hi%20DD%20Construction!%20I'm%20interested%20in%20learning%20more%20about%20your%20construction%20services%20in%20Centurion.%20Can%20we%20discuss%20my%20project?" 
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/27123456789?text=Hi%20DD%20Construction!%20I'm%20interested%20in%20your%20construction%20services." 
        class="whatsapp-float" 
-       title="Chat on WhatsApp"
-       target="_blank">
+       target="_blank"
+       aria-label="Chat on WhatsApp">
         💬
     </a>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="footer-about">
+            <div class="footer-section">
                 <div class="footer-logo">
-                    <div class="logo">DD</div>
-                    <span class="company-name">DD Construction</span>
+                    <img src="https://i.ibb.co/KxcRkPDs/Chat-GPT-Image-Jan-29-2026-06-44-58-PM.png" 
+                         alt="DD Construction" 
+                         style="width: 40px; height: 40px; border-radius: 8px;">
+                    <h4><!-- EDITABLE:footer-brand -->DD Construction<!-- /EDITABLE --></h4>
                 </div>
-                <p>Professional construction services in Centurion, Pretoria specializing in residential and commercial projects with a focus on the N1 development corridor.</p>
+                <p><!-- EDITABLE:footer-description -->Professional construction services in Centurion, Gauteng. Building excellence in residential and commercial projects with innovative digital previews.<!-- /EDITABLE --></p>
             </div>
-            
-            <div class="footer-links">
-                <h3>Quick Links</h3>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Projects</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            
-            <div class="footer-contact">
-                <h3>Contact Info</h3>
-                <p>📍 Centurion, Pretoria</p>
-                <p>📱 Follow on Instagram: @ddconstruction_</p>
-                <p>🕘 Mon-Fri: 8:00 AM - 5:00 PM</p>
-                <p>🕘 Sat: 9:00 AM - 1:00 PM</p>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li>Residential Construction</li>
+                    <li>Commercial Projects</li>
+                    <li>Renovations</li>
+                    <li>Design & Planning</li>
+                    <li>General Contracting</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📧 <!-- EDITABLE:footer-email -->Septemberdartagnan@gmail.com<!-- /EDITABLE --></p>
+                <p>📱 @<!-- EDITABLE:footer-instagram -->ddconstruction_<!-- /EDITABLE --></p>
+                <p>📍 <!-- EDITABLE:footer-location -->Gauteng, South Africa<!-- /EDITABLE --></p>
             </div>
         </div>
-        
         <div class="copyright">
-            <p>&copy; 2026 DD Construction. All rights reserved.</p>
-            <p>Building excellence in Centurion, one project at a time.</p>
+            <p><!-- EDITABLE:footer-text -->© 2026 DD Construction. All rights reserved.<br>Building excellence one project at a time.<!-- /EDITABLE --></p>
         </div>
     </footer>
 
@@ -710,12 +1038,12 @@
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navLinks = document.getElementById('navLinks');
         
-        mobileMenuBtn.addEventListener('click', () => {
+        mobileMenuBtn?.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             mobileMenuBtn.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
         });
         
-        // Close mobile menu when clicking a link
+        // Close mobile menu on link click
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -723,7 +1051,33 @@
             });
         });
         
-        // Scroll animations
+        // Navbar scroll effect
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav?.classList.add('scrolled');
+            } else {
+                nav?.classList.remove('scrolled');
+            }
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Intersection Observer for fade-in animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -737,45 +1091,87 @@
             });
         }, observerOptions);
         
-        // Observe all loading elements
-        document.querySelectorAll('.loading').forEach(el => {
-            observer.observe(el);
-        });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
         
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
+        // Gallery Management - CMS Integration
+        // This function will be called by your CMS to populate the gallery
+        function initializeGallery(galleryImages, galleryEnabled) {
+            const gallery = document.querySelector('.gallery');
+            const galleryGrid = document.getElementById('galleryGrid');
+            
+            // Show/hide gallery based on CMS toggle
+            if (galleryEnabled && galleryImages && galleryImages.length > 0) {
+                gallery.classList.add('enabled');
                 
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
+                // Clear existing content
+                galleryGrid.innerHTML = '';
                 
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
+                // Add images from CMS
+                galleryImages.forEach((image, index) => {
+                    const galleryItem = document.createElement('div');
+                    galleryItem.className = 'gallery-item fade-in';
+                    galleryItem.style.animationDelay = `${index * 0.1}s`;
+                    
+                    galleryItem.innerHTML = `
+                        <img src="${image.url}" 
+                             alt="${image.caption || 'DD Construction Project'}" 
+                             class="gallery-image"
+                             loading="lazy">
+                        ${image.caption ? `
+                            <div class="gallery-caption">
+                                <p>${image.caption}</p>
+                            </div>
+                        ` : ''}
+                    `;
+                    
+                    galleryGrid.appendChild(galleryItem);
+                    
+                    // Observe for animation
+                    observer.observe(galleryItem);
+                });
+            } else {
+                gallery.classList.remove('enabled');
+            }
+        }
+        
+        // Example: Initialize with sample data (replace with actual CMS data)
+        // In production, this will be called by your Flutter CMS with real data
+        document.addEventListener('DOMContentLoaded', () => {
+            // Sample data - replace with actual CMS integration
+            const sampleGalleryData = [
+                {
+                    url: 'https://images.unsplash.com/photo-1590479773265-7464e5d48118?w=800&q=80',
+                    caption: 'Residential Development - Centurion'
+                },
+                {
+                    url: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
+                    caption: 'Commercial Project - N1 Corridor'
+                },
+                {
+                    url: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80',
+                    caption: 'Modern Office Complex'
+                },
+                {
+                    url: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+                    caption: 'Industrial Construction'
+                },
+                {
+                    url: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80',
+                    caption: 'Luxury Residence'
+                },
+                {
+                    url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80',
+                    caption: 'Corporate Headquarters'
                 }
-            });
+            ];
+            
+            // Initialize gallery (set to false to hide by default)
+            // Your CMS will control this with the galleryEnabled toggle
+            initializeGallery(sampleGalleryData, false);
         });
         
-        // WhatsApp click tracking (example)
-        document.querySelectorAll('a[href*="whatsapp"]').forEach(link => {
-            link.addEventListener('click', () => {
-                // In a real implementation, you would send this to analytics
-                console.log('WhatsApp link clicked:', link.href);
-            });
-        });
-        
-        // Image loading error handling
-        window.addEventListener('load', () => {
-            document.querySelectorAll('img').forEach(img => {
-                if (!img.complete || img.naturalHeight === 0) {
-                    console.warn('Image failed to load:', img.src);
-                }
-            });
-        });
+        // Expose function for CMS to call
+        window.updateGallery = initializeGallery;
     </script>
 </body>
 </html>
